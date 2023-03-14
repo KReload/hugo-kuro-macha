@@ -2,7 +2,7 @@
 
 {{ if $featured_image }}
 
-<header style="background-image: url('{{ $featured_image }}');" class="header-kuro">
+<header style="background-image: url('{{ .Site.BaseURL }}{{ $featured_image }}');" class="header-kuro">
     <h1 class="header-kuro_in">{{ .Title | default .Site.Title }}</h1>
     {{ with .Params.description }}
     <h5 class="header-kuro_in">{{ . }}</h2>
