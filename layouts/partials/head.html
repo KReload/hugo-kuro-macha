@@ -1,0 +1,8 @@
+<header>
+  {{ $res := resources.Get "css/style.scss" }} {{ $style := $res |
+  resources.ToCSS }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" />
+  <nav class="navbar" role="navigation">
+    {{ if len $.Site.Menus }} {{ partial "menu.html" . }}{{ end }}
+  </nav>
+</header>

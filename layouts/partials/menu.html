@@ -1,0 +1,22 @@
+<nav class="menu">
+    <a href="/" class="menu-logo">{{ $.Site.Params.logo.logoName }} </a>
+    <ul class="menu">
+    {{ range $.Site.Menus.main }}
+        {{ if not .HasChildren }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+    {{ end }}
+    {{- with .Site.Params.social -}}
+    {{ partial "svg.html" . }}
+    {{- end -}}
+    {{ if eq .Site.Language.Lang "en" }}
+    <a class="button is-small is-danger is-rounded" href="/">FR</a> |
+    <a class="button is-small is-danger is-rounded" href="/en">EN</a>
+    {{ else }}
+    <a class="button is-small is-danger is-rounded" href="/">FR</a> |
+    <a class="button is-small is-danger is-rounded" href="/en">EN</a>
+    {{ end }}   
+    </ul>
+    
+  
+</nav>

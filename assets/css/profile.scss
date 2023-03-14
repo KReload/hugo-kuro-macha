@@ -1,0 +1,14 @@
+
+
+.profile-img {
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: var(--background);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+    top: -100px;
+}

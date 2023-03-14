@@ -1,0 +1,6 @@
+{{ define "main" -}}
+<div class="profile-img" style="background-image: url({{ .Site.Params.profileImg }})"></div>
+<div class="posts">
+    {{.Content}}
+</div>
+{{- end }}

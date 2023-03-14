@@ -1,0 +1,12 @@
+{{ define "main" -}}
+{{if (eq .Params.center true)}}
+<div>
+    {{ .Content }}
+  </div>
+{{else}}
+<div class="post">
+    {{ .Content }}
+  </div>
+
+{{end}}
+{{- end }}

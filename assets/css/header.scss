@@ -1,0 +1,24 @@
+.header-kuro {
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    background-size: 100%;
+    background: cover;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-kuro_in {
+    
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.head-alt {
+    color: var(--color-secondary);
+    background-color: var(--background-secondary);
+}
